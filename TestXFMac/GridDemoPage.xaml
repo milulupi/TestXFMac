@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="TestXFMac.GridDemoPage">
+    <ContentPage.Padding>
+    <OnPlatform x:TypeArguments="Thickness">
+            <OnPlatform.iOS>
+                0, 50, 0, 0
+            </OnPlatform.iOS>
+           
+        </OnPlatform>
+    </ContentPage.Padding>
+    <ContentPage.Content>
+
+            
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="100"/>
+                 </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="100"/>
+                </Grid.ColumnDefinitions>
+                <Label Text="Autosized Cell"
+                       TextColor="White"
+                       BackgroundColor="Black"
+                       Grid.Row="0" Grid.Column="0" />
+                 <BoxView Color="Silver"
+                         HeightRequest="0"
+                         Grid.Row="0" Grid.Column="1" />
+                <BoxView Color="Black"
+                         Grid.Row="1" Grid.Column="0" />
+                <Label Text="Leftover Space"
+                       Grid.Row="1" Grid.Column="1"
+                       TextColor="Purple"
+                       BackgroundColor="Aqua"
+                       HorizontalTextAlignment="Center"
+                       VerticalTextAlignment="Center" 
+                       />
+                <Label Text="Span two rows"
+                       Grid.Row="0" Grid.Column="2"
+                       Grid.RowSpan="2"/>
+                <Label Text="Span two columns"
+                       Grid.Row="2" Grid.Column="0"
+                       Grid.ColumnSpan="2"
+                       TextColor="Blue"
+                       BackgroundColor="Yellow"
+                       HorizontalTextAlignment="Center"
+                       VerticalTextAlignment="Center" />
+                <Label Text="Fixed 100x100"
+                       Grid.Row="2" Grid.Column="2"
+                       TextColor="Aqua"
+                       BackgroundColor="Red"
+                       HorizontalTextAlignment="Center"
+                       VerticalTextAlignment="Center" />
+                
+          
+            
+               
+            </Grid>
+
+    </ContentPage.Content>
+</ContentPage>

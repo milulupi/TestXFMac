@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="TestXFMac.MyBinding">
+    <StackLayout>
+        <Label BindingContext="{x:Reference thisSlider}" Text="{Binding Path=Value}" />
+        <Label Text="mybinding"/>
+        <Slider x:Name="thisSlider" Maximum="1"/>
+        <Entry x:Name="thisEntry" />
+        <Label  BindingContext="{x:Reference Name=thisEntry}" Text="{Binding Path=Text}"/>
+    </StackLayout>
+</ContentPage>

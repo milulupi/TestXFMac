@@ -66,6 +66,10 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
+    <EmbeddedResource Include="MyBinding.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App.xaml.cs">
@@ -103,6 +107,9 @@
     <Compile Include="HslViewModel.cs" />
     <Compile Include="HslColorScrollPage.xaml.cs">
       <DependentUpon>HslColorScrollPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="MyBinding.xaml.cs">
+      <DependentUpon>MyBinding.xaml</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>

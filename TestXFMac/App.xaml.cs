@@ -17,7 +17,8 @@ namespace TestXFMac
             //MainPage = new OneShotDateTimePage();
 
             //MainPage = new ClockPage();
-            MainPage = new HslColorScrollPage();
+            //MainPage = new HslColorScrollPage();
+            MainPage = new MyBinding();
         }
 
         protected override void OnStart()

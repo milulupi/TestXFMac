@@ -6,7 +6,7 @@
                 0, 50, 0, 0
             </OnPlatform.iOS>
            
-        </OnPlatform>
+        </OnPlatform> 
     </ContentPage.Padding>
     <ContentPage.Content>
 
